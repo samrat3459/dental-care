@@ -1,0 +1,705 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --skyblue: #0DCAF0;
+    --white: #F8F8F8;
+    --p: #999999;
+    --h1: #505050;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* ================== header ======================= */
+
+#top-header {
+    background-color: rgb(253, 248, 248);
+    padding: 25px 28px 25px 0;
+}
+
+/* ====================== navbar -==================== */
+
+
+
+.navbar {
+    padding: 20px 0 20px 25px;
+    background-color: rgb(238, 238, 238);
+}
+
+.navbar-nav li {
+    margin-right: 25px;
+}
+
+.navbar-brand {
+    background-color: var(--skyblue);
+    padding: 15px 30px;
+    font-size: 14px;
+    color: var(--white) !important;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+.navbar-brand:hover {
+    background-color: transparent;
+    color: var(--h1) !important;
+    border: 1px solid var(--skyblue);
+    transition: 0.5s ease-in-out;
+}
+
+.navbar-nav li a {
+    font-size: 17px !important;
+    font-weight: bold;
+}
+
+.navbar-nav li a:hover {
+    color: var(--skyblue) !important;
+    transition: 0.5s ease-in-out;
+}
+
+nav ul li a::after {
+    content: "";
+    height: 3px;
+    width: 0%;
+    display: block;
+    background-color: var(--skyblue);
+    margin: auto;
+    transition: 0.5s ease-in-out;
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+}
+
+/* ================ carousel bannar ========================= */
+
+
+.carousel-item img {
+    height: 600px;
+    object-fit: cover;
+}
+
+.carousel-item {
+    position: relative;
+    height: 600px;
+}
+
+.carousel-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.2;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 50%;
+    top: 20%;
+}
+
+.carousel-caption .btn {
+    background-color: var(--skyblue);
+    color: white;
+    font-size: 14px;
+    padding: 15px 25px;
+    font-weight: bold;
+}
+
+.view-btn {
+    background-color: white !important;
+    color: var(--skyblue) !important;
+}
+
+/* ============================ appointment ========================= */
+
+#appointment {
+    background-color: var(--skyblue);
+    padding: 70px 30px;
+}
+
+
+.full-form label {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.form-control {
+    background-color: transparent;
+    border-radius: 0 !important;
+    margin-bottom: 30px !important;
+    border-color: #85D1D4;
+    color: #ADEAF2 !important;
+    font-weight: bold;
+    margin-left: -12px !important;
+    width: 75%;
+}
+
+input:focus {
+    background-color: transparent !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: var(--white) !important;
+}
+
+::placeholder {
+    color: #ADEAF2 !important;
+    font-weight: bold;
+}
+
+.form-select {
+    background-color: transparent;
+    border-radius: 0 !important;
+    margin-bottom: 30px !important;
+    border-color: #85D1D4;
+    color: #ADEAF2 !important;
+    font-weight: bold;
+    margin-left: -12px !important;
+    width: 75%;
+}
+
+.form-select:focus {
+    background-color: transparent !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: var(--white) !important;
+}
+
+textarea {
+    width: 88% !important;
+    resize: none;
+}
+
+.form-btn {
+    width: 88%;
+    margin-left: -12px;
+    padding: 12px 0;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: var(--skyblue);
+}
+
+.full-appointment {
+    background-color: white;
+    margin: 8px 0;
+    padding: 40px 30px;
+    border-radius: 5px;
+}
+
+.full-appointment i {
+    font-size: 45px;
+    color: var(--skyblue);
+    padding-right: 20px;
+}
+
+/* ================ toothcare service ============== */
+
+.header-space {
+    padding: 70px 0;
+}
+
+.bg-color {
+    background-color: rgb(230, 227, 227);
+}
+
+.top-heading {
+    text-align: center;
+    color: var(--skyblue);
+    font-weight: bold;
+}
+
+.sub-heading {
+    text-align: center;
+    color: var(--h1);
+    margin-bottom: 70px;
+}
+
+.full-service-box {
+    background-color: var(--white);
+    padding: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.full-service-box:hover {
+    background-color: var(--skyblue);
+    transition: 0.7s;
+}
+
+.service-icon i {
+    font-size: 40px;
+    background-color: var(--skyblue);
+    color: var(--white);
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.full-service-box:hover .service-icon i {
+    background-color: #6ae7f5;
+}
+
+.service-content p {
+    font-size: 18px;
+    margin-top: 15px;
+    color: var(--p);
+    font-weight: 500;
+}
+
+.full-service-box:hover .service-content p {
+    color: #9be7f0;
+}
+
+.full-service-box:hover .service-content h4 {
+    color: var(--white);
+}
+
+
+/* =================== Dental clinic ======================= */
+
+.clinic-img {
+    padding: 0 30px;
+}
+
+.clinic-img img {
+    height: 600px;
+    object-fit: cover;
+}
+
+.full-review-box {
+    display: flex;
+    border: 3px solid var(--skyblue);
+    padding: 8px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.review-icon {
+    font-size: 40px;
+    color: var(--skyblue);
+    margin-right: 10px;
+}
+
+.review-content h4 {
+    color: var(--skyblue);
+    font-weight: bold;
+}
+
+.review-content h5 {
+    color: var(--p);
+    line-height: 30px;
+}
+
+.review {
+    padding: 70px 40px;
+}
+
+.review p {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--p);
+    line-height: 35px;
+    margin: 30px 0 50px 0;
+}
+
+/* ================ qualified dentist ======================== */
+
+#qualified {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.qualified-full-card {
+    background-color: var(--white);
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 90px;
+    border-radius: 5px;
+}
+
+.qualified-full-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.6s;
+    transform: scale(1.1);
+}
+
+.qualified-img {
+    position: relative;
+    display: block;
+    bottom: 130px;
+}
+
+.qualified-img img {
+    width: 200px;
+    height: 200px;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border: 10px solid rgb(241, 239, 239);
+}
+
+.qualified-content {
+    margin-top: -110px;
+}
+
+.qualified-icon i {
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    background-color: var(--skyblue);
+    color: var(--white);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    margin-top: 12px;
+}
+
+.qualified-icon i:hover {
+    background-color: var(--white);
+    border: 1px solid var(--skyblue);
+    color: var(--skyblue);
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.qualified-content p {
+    font-size: 18px;
+    color: var(--p);
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+
+/* =============== book appointment ==================== */
+
+#book-appointment {
+    background: linear-gradient(#10bbd2cc, #10bbd2cc), url('../images/bannar-2.png') no-repeat center/ cover;
+    width: 100%;
+    padding: 70px 0;
+}
+
+.book-btn {
+    padding: 20px 40px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    outline: none;
+    border: none;
+    color: var(--skyblue);
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.book-btn:hover {
+    border: 2px solid white;
+    background-color: var(--skyblue);
+    color: white;
+    transition: 0.7s;
+}
+
+/* =============== happy customer ================== */
+
+#happy-customer {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.customer-content {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.customer-content::after {
+    content: "";
+
+    background-color: var(--white);
+    display: block;
+    height: 25px;
+    width: 25px;
+    position: relative;
+    bottom: -40px;
+    transform: rotate(45deg);
+}
+
+.customer-content::before {
+    content: '“';
+    font-size: 110px;
+    font-family: sans-serif;
+    background-color: rgb(238, 236, 236);
+    color: var(--skyblue);
+    position: relative;
+    top: -55px;
+    height: 50px;
+    width: 50px;
+    display: block;
+    line-height: 110px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.customer-content p {
+    font-size: 18px;
+    color: var(--p);
+    font-weight: 500;
+    line-height: 35px;
+    margin-top: -40px;
+    margin-bottom: -20px;
+}
+
+.customer-identification {
+    display: flex;
+    align-items: center;
+}
+
+.customer-img img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+.customer-name {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+
+/* ================== result ===================== */
+
+.result-img img {
+    height: 350px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.result-card {
+    position: relative;
+}
+
+.result-content {
+    position: absolute;
+    bottom: 0px;
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: none;
+    cursor: pointer;
+}
+
+.result-card:hover .result-content {
+    display: block;
+}
+
+
+/* ================ our blog ================= */
+
+#blog {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.blog-content {
+    background-color: var(--white);
+    padding: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.full-blog-card {
+    box-shadow: rgba(0, 0, 0, 0.15) 4px 4px 2.8px;
+}
+
+.full-blog-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.blog-img img {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+
+/* ================= price section ==================== */
+
+#price {
+    background-color: #F8F8F8;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.full-price-box {
+    border: 1px solid rgb(230, 229, 229);
+    background-color: rgb(245, 242, 242);
+    box-shadow: rgba(0, 0, 0, 0.15) 4px 4px 2.8px;
+}
+
+.full-price-box:hover {
+    background-color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: none;
+    transition: 0.5s;
+}
+
+.full-price-box h1 {
+    font-weight: bold;
+    font-size: 48px;
+    color: var(--skyblue);
+    margin-bottom: 20px;
+}
+
+.full-price-box sup {
+    font-weight: normal;
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+.price-btn {
+    background-color: var(--skyblue);
+    padding: 14px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+/* =============== details section ============== */
+
+#details {
+    background: linear-gradient(#10bbd2cc, #10bbd2cc), url('../images/bannar-2.png') no-repeat center/ cover;
+    padding: 60px 30px;
+}
+
+.details-content h6 {
+    margin-top: -9px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+.details-content p {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--white);
+    margin-top: 40px;
+}
+
+.details-social i {
+    color: var(--white);
+    background-color: #5de7fc;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    margin-top: 20px;
+}
+
+.details-social i:hover {
+    background-color: var(--white);
+    color: var(--skyblue);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.details-services p {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.details-quick-links p {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.recent-details {
+    display: flex;
+    align-items: center;
+}
+
+.recent-img img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.recent-text {
+    margin-left: 10px;
+}
+
+.recent-text span, .icon {
+    color: #c4f6fd;
+    font-size: 13px;
+}
+
+.recent-text h5 {
+    color: var(--white);
+    margin-top: 5px;
+}
+
+.question-section {
+    display: flex;
+    align-items: center;
+}
+
+.question-icon {
+    color: var(--white);
+    font-size: 20px;
+    margin-right: 25px;
+    margin-top: -15px;
+}
+
+.question-content {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* =============== footer ================= */
+footer {
+    background-color: #00BCD4;
+    padding: 40px 0;
+}
+
+footer p {
+    text-align: center;
+    color: var(--white);
+    font-size: 18px;
+}
